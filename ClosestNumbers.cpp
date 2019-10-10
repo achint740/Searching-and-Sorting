@@ -4,7 +4,7 @@ using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the closestNumbers function below.
+
 vector<int> closestNumbers(vector<int> arr) {
   vector<int>v;
   sort(arr.begin(),arr.end());
