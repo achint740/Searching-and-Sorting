@@ -39,10 +39,10 @@ int main()
       }
       //If result is found true then print "YES" else "NO"
       if(res){
-          cout<<"YES\n";
+          cout<<"YES"<<endl;
       }
           else{
-           cout<<"NO\n";
+           cout<<"NO"<<endl;
           }
      }
 return 0;
