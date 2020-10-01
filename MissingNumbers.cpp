@@ -1,33 +1,30 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the missingNumbers function below.
-vector<int> missingNumbers(vector<int> arr, vector<int> brr)
+// Do Complete the misstheNumber function below.
+vector<int> misstheNumber(vector<int> arr1, vector<int> arr2)
 {
-  vector<int>v;
+  vector<int>vec;
   int a[10000]={0};
   int b[10000]={0};
-  for(int i=0;i<arr.size();i++)
+  for(int i=0;i<arr1.size();i++)
     {
-        int ind = arr[i];
-        a[ind]++;
+        int index = arr1[i];
+        a[index]++;
     }
-  for(int i=0;i<brr.size();i++)
+  for(int i=0;i<arr2.size();i++)
     {
-        int ind = brr[i];
-        b[ind]++;
+        int index = arr2[i];
+        b[index]++;
     }
 for(int i=0;i<10000;i++)
 {
     if(b[i]>a[i])
-      v.push_back(i);
+      vec.push_back(i);
 }
-/*for(int i=0;i<v.size();i++)
- cout<<v[i]<<" ";*/
-return v;
+return vec;
 }
 
 int main()
@@ -68,7 +65,7 @@ int main()
         brr[i] = brr_item;
     }
 
-    vector<int> result = missingNumbers(arr, brr);
+    vector<int> result = misstheNumber(arr, brr);
 
     for (int i = 0; i < result.size(); i++) {
         fout << result[i];
