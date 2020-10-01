@@ -13,15 +13,13 @@ int main()
          if(a[i-1]>=num){
            a[i]=a[i-1];
         for(j=0;j<n;j++)
-           cout<<a[j]<<" ";
-           cout<<endl;
+           cout<<a[j]<<" \n";
          }
           else
           {
               a[i]=num;
                for(j=0;j<n;j++)
-           cout<<a[j]<<" ";
-           cout<<endl;
+           cout<<a[j]<<" \n";
            break;
           }
      }
@@ -29,8 +27,7 @@ int main()
      {
          a[0]=num;
        for(j=0;j<n;j++)
-           cout<<a[j]<<" ";
-           cout<<endl;
+           cout<<a[j]<<" \n";
      }
  }
 
